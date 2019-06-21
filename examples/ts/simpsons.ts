@@ -1,5 +1,5 @@
 // tslint:disable:no-console
-import { duckIt } from 'duckIt';
+import { duckIt } from 'duck-it';
 
 // Result as default JSON
 async function get() {
