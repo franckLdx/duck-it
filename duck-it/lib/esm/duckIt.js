@@ -18,7 +18,7 @@ export function duckIt(searchQuery, searchOption = {}) {
     });
 }
 const defaultSearchOption = {
-    appName: 'node-duckduckgo',
+    appName: 'duck-it',
     format: 'json'
 };
 function makeQueryString(searchQuery, userOption) {

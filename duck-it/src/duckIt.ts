@@ -23,7 +23,7 @@ export async function duckIt(searchQuery: string, searchOption: SearchOption = {
 }
 
 const defaultSearchOption: SearchOption = {
-  appName: 'node-duckduckgo',
+  appName: 'duck-it',
   format: 'json'
 };
 

@@ -21,7 +21,7 @@ function duckIt(searchQuery, searchOption = {}) {
 }
 exports.duckIt = duckIt;
 const defaultSearchOption = {
-    appName: 'node-duckduckgo',
+    appName: 'duck-it',
     format: 'json'
 };
 function makeQueryString(searchQuery, userOption) {
