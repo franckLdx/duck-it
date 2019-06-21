@@ -1,0 +1,83 @@
+{
+  "name": "duck-it",
+  "version": "1.0.0",
+  "description": "DuckDuckGo client for javascript/typescript",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "browser": "lib/cjs/browser.js",
+  "typings": "lib/cjs/index.d.ts",
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.d.ts",
+    "package.json",
+    "Readme.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "watch": "tsc --watch",
+    "build": "tsc -p tsc -p src/tsconfig.cjs.json && tsc -p src/tsconfig.esm.json",
+    "pretest": "npm run build",
+    "test": "mocha --require ts-node/register test/**/*.ts",
+    "coverage": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franckLdx/duck-it"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "browser",
+    "typescript",
+    "javascript",
+    "duckduckgo"
+  ],
+  "authors": "FranckLdx (https://github.com/franckLdx)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/franckLdx/duck-it/blob/master/LICENSE"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franckLdx/duck-it/issues"
+  },
+  "homepage": "https://github.com/franckLdx/duck-it/blob/master/README.md",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "del": "^4.0.0",
+    "mocha": "^6.0.2",
+    "nyc": "^14.1.1",
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "tslint-clean-code": "^0.2.9",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "nyc": {
+    "include": [
+      "test/**/*.ts",
+      "test/**/*.js"
+    ],
+    "extension": [
+      ".ts",
+      ".js"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  }
+}
