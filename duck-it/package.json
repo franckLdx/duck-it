@@ -1,5 +1,5 @@
 {
-  "name": "duck-it",
+  "name": "duckIt",
   "version": "1.0.0",
   "description": "DuckDuckGo client for javascript/typescript",
   "main": "lib/cjs/index.js",
@@ -18,7 +18,7 @@
     "watch": "tsc --watch",
     "build": "tsc -p tsc -p src/tsconfig.cjs.json && tsc -p src/tsconfig.esm.json",
     "pretest": "npm run build",
-    "test": "mocha --require ts-node/register test/**/*.ts",
+    "test": "mocha --require ts-node/register src/**/*.test.ts",
     "coverage": "nyc npm run test"
   },
   "repository": {

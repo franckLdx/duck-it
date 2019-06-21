@@ -1,7 +1,7 @@
 "use strict";
 // tslint:disable:no-console
 
-const { duckIt } = require("../../lib");
+const { duckIt } = require("duckIt");
 
 // Result as default JSON
 async function get() {

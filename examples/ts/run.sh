@@ -1,0 +1,1 @@
+yarn run ts-node ./examples/ts/simpsons.ts
