@@ -5,7 +5,7 @@ const { duckIt } = require("duck-it");
 
 // Result as default JSON
 async function get() {
-  const result = await duckIt('bart simpsons');
+  const result = await duckIt('!w pizza');
   console.log(result.data.AbstractText);
 }
 
