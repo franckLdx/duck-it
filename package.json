@@ -4,7 +4,5 @@
     "duck-it",
     "examples/**"
   ],
-  "devDependencies": {
-    "ts-node": "^8.3.0"
-  }
+  "devDependencies": {}
 }
