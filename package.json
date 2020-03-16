@@ -4,5 +4,6 @@
     "duck-it",
     "examples/**"
   ],
-  "devDependencies": {}
+  "devDependencies": {},
+  "version": "1.22.1"
 }
