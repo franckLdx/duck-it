@@ -1,6 +1,6 @@
 {
   "name": "duck-it",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "DuckDuckGo client for javascript/typescript",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
