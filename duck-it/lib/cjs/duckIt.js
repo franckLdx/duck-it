@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.duckIt = void 0;
 const axios_1 = require("axios");
 const parameters_1 = require("./parameters");
 const base_url = 'https://api.duckduckgo.com/';

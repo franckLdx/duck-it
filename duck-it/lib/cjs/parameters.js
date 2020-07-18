@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.mapParameters = void 0;
 // tslint:no-console
 const wrongValueError = (userKey, userValue) => new Error(`Unexpected value for parameter ${userKey}: ${userValue}`);
 const appNameMapper = (userKey, userValue) => {
